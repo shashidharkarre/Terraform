@@ -30,3 +30,18 @@ variable "example-list"{
 output "example_list" {
     value = "Welcome to ${var.example-list[0]} Terraform Lab My name is ${var.example-list[3]} "
 }
+
+variable "example-map" {
+    default = {
+        technology = "Devops",
+        age = 34,
+        city="Hyderabad",
+        time="5 years",
+        Name="shashidhar"
+
+}  
+}
+
+output "ex-map" {
+  value = "My name is ${var.example-map["Name"]} and i have ${var.example-map["time"]} experience in ${var.example-map["technology"]}"
+}
