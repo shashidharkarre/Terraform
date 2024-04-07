@@ -10,15 +10,15 @@ resource "aws_instance" "b49-ec2" {
   }
 } 
 
-resource "aws_security_group" "allow_all" {
+resource "aws_security_group" "allow_ssh" {
   name        = "allow_ssh"
-  description = "Allow all inbound traffic"
+  description = "Allow SSH inbound traffic"
 
   ingress {
     description      = "SSH to VPC"
-    from_port        = 0
-    to_port          = 0
-    protocol         = "-1"
+    from_port        = 22
+    to_port          = 22
+    protocol         = "tcp"
     cidr_blocks      = ["0.0.0.0/0"]
   }
 
