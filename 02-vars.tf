@@ -1,5 +1,5 @@
 variable "sample" {
-  type = "Hello World"
+  default = "Hello World"
 }
 
 output "sample-op" {
