@@ -45,3 +45,14 @@ variable "example-map" {
 output "ex-map" {
   value = "My name is ${var.example-map["Name"]} and i have ${var.example-map["time"]} experience in ${var.example-map["technology"]}"
 }
+
+variable "state" {}
+
+output "state-name" {
+  value = "Name of the state where  you live: ${var.state}"
+}
+
+variable "country" {}
+output "country-name" {
+  value = "Country where you live : ${var.country}"
+}
