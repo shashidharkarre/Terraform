@@ -1,0 +1,2 @@
+state = "Telangana"
+country = "India"
