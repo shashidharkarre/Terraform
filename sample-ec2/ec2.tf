@@ -4,6 +4,8 @@ resource "aws_instance" "b49-ec2" {
 
   tags = {
     Name = "my-first-ec2"
+    ENV = "dev"
+    Project = "cc"
   }
 } 
 
